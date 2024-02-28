@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure--dh)h7i-u*#qer==i_kryav#qbu4oxjm7m_9!!(i$)-uh8$kz(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['backend-week9.onrender.com','localhost']
+ALLOWED_HOSTS =['backend-week9-2.onrender.com','localhost']
 
 
 # Application definition
@@ -59,7 +59,6 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'api_app.urls'
-STATIC_ROOT = BASE_DIR / "staticfiles"
 
 CORS_ALLOWED_ORIGINS =[
     "http://localhost:3000",
@@ -161,7 +160,7 @@ WHITENOISE_MANIFEST_STRICT=False
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
-
+STATIC_ROOT = BASE_DIR / "staticfiles"
 STATIC_URL = 'static/'
 MEDIA_URL='media/'
 MEDIA_ROOT=BASE_DIR / 'mediafiles'
