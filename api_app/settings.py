@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     'djoser',
     'corsheaders',
+    'django_filters'
     'drf_yasg',
    
 ]
@@ -66,8 +67,17 @@ CORS_ALLOWED_ORIGINS =[
 ]
 
 CSRF_TRUSTED_ORIGINS =[
-    "https://read-and-write.example.com"
+    "https://localhost:3000",
 ]
+
+CORS_ALLOW_METHODS =(
+    'DELETE',
+    'GET',
+    'OPTIONS',
+    'PATCH',
+    'POST',
+    'PUT',
+)
 
 TEMPLATES = [
     {
